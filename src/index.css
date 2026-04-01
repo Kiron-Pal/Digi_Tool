@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import 'tailwindcss';
+@plugin "daisyui";
+
+@theme {
+  --color-primary: #4f39f6;
+  --color-primaryEnd: #9514fa;
+  --color-hadingColor: #101727;
+}
+
+@layer utilities {
+  body {
+    font-family: 'Manrope', sans-serif;
+  }
+  p {
+    color: #627382;
+    opacity: 0.9;
+  }
+
+  .primaryGradient {
+    @apply bg-gradient-to-r from-[#4F39F6] to-[#9514FA];
+  }
+
+  .containers {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .textGradientColorApply {
+    @apply bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent;
+  }
+
+  /* Navigation Menu Hover */
+  .textGradientColorApplyE {
+    @apply bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent;
+  }
+
+  .textGradientColorApplyE:hover {
+    @apply from-[#9514FA] to-[#4F39F6];
+  }
+
+  /* P text Change Custom */
+  .textChange {
+    color: #fff;
+    opacity: 0.9;
+  }
+}
